@@ -8,7 +8,7 @@ class ToolBar extends React.Component {
 
     toolBarDisplayRender() {
         if (this.props.tool === null) {
-            return <div>Tool Bar</div>
+            return <div>TOOL BAR</div>
         }
         const buttonDisplay = this.props.tool.structure.map(button => {
             if (button.id.includes('nav')) {

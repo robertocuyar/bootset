@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from "react-redux";
 import {inputNavColor, inputJumboColor, inputFormColor, inputListColor, inputBodyColor} from "../actions";
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
 class ColorToolBar extends React.Component {
@@ -9,19 +12,35 @@ class ColorToolBar extends React.Component {
            return <div>COLOR TOOL BAR</div>
        }
            return (
-               <div>
+               <Container>
+                   <Row>
+                       <Col>
                    <label>Nav Bar Color Change</label>
                    <input type="text" onChange={(e)=> this.props.inputNavColor(e.target.value)}/>
-                   <br/>
+                       </Col>
+                       <Col>
                    <label>Jumbotron Color Change</label>
                    <input type="text" onChange={(e)=> this.props.inputJumboColor(e.target.value)}/>
-                   <label>Form Color Change</label>
-                   <input type="text" onChange={(e)=> this.props.inputFormColor(e.target.value)}/>
+                       </Col>
+
+                   </Row>
+                   <Row>
+                       <Col>
+                           <label>Form Color Change</label>
+                           <input type="text" onChange={(e)=> this.props.inputFormColor(e.target.value)}/>
+                       </Col>
+                       <Col>
                    <label>List Color Change</label>
                    <input type="text" onChange={(e) => this.props.inputListColor(e.target.value)}/>
-                   <label>Body Color Change</label>
-                   <input type="text" onChange={(e) => this.props.inputBodyColor(e.target.value)}/>
-               </div>
+                       </Col>
+                   </Row>
+                   <Row>
+                       <Col>
+                           <label>Body Color Change</label>
+                           <input type="text" onChange={(e) => this.props.inputBodyColor(e.target.value)}/>
+                       </Col>
+                   </Row>
+               </Container>
            )
 
    }

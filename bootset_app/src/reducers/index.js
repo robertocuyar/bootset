@@ -42,17 +42,17 @@ const toolsReducer = () => {
                 {text: 'Tabbed List', id: 'listTabbed'},
                 {text: 'Clear List', id: 'listClear'}
             ]
-        },
-        {
-            piece: "Footer",
-            connect: "footer",
-            structure: [{text: 'Footer', id: 'footer'}]
-        },
-        {
-            piece: "Settings",
-            connect: "settings",
-            structure: [{text: 'Nav Bar Color', id: 'settings'}]
         }
+        // {
+        //     piece: "Footer",
+        //     connect: "footer",
+        //     structure: [{text: 'Footer', id: 'footer'}]
+        // },
+        // {
+        //     piece: "Settings",
+        //     connect: "settings",
+        //     structure: [{text: 'Nav Bar Color', id: 'settings'}]
+        // }
     ]
 }
 

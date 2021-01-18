@@ -9,19 +9,34 @@ body {
 }
 .nav_main {
     background-color: var(--bold-color);
+
+
+}
+.nav_text{
+    font-family: 'Potta One', cursive;
+    font-size: 200% !important;
+    color: var(--main-bg-color) !important;
 }
 .nav_side {
     background-color: var(--bold-main-color);
-    /*height: 80vh;*/
+    height: 100vh !important;
 
+}
+.components, #components-title{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-bg-color);
+}
+#components-title{
+    border-bottom: var(--main-color) groove 2px;
+}
+
+.components{
+    cursor: pointer;
 }
 #title{
     font-size: 100%;
 }
-.side_text{
-    color: white !important;
-    text-decoration: none !important;
-}
+
 main {
     width: 70% !important;
 }

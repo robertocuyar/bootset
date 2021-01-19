@@ -11,7 +11,7 @@ class SideBar extends Component {
             return (
                 <div key={tool.connect}>
                     <div onClick={()=>this.props.selectTool(tool)} className={"my-3 components"}>
-                        <h4>{tool.piece}</h4>
+                        <h5>{tool.piece}</h5>
                     </div>
                 </div>
             )
@@ -20,7 +20,7 @@ class SideBar extends Component {
             <div>
                 <Row id={"components-title"} className={"my-2 d-flex justify-content-center"}>
                     <Col className={"d-flex justify-content-center"}>
-                    <h3>Components</h3>
+                    <h4>Components</h4>
                     </Col>
                 </Row>
             <Row className={"my-2"}>

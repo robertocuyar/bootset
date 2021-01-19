@@ -8,7 +8,7 @@ const NavBarIntro =() =>{
         <Navbar className={"nav_main"} variant="dark">
             <Navbar.Brand className={"nav_text"} href="#home">
                 {' '}
-                Bootset
+                <h2>Bootset</h2>
             </Navbar.Brand>
         </Navbar>
     )

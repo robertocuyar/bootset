@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { selectNavChange, selectJumboChange, selectFormChange, selectListChange } from "../actions";
 
 import { connect } from "react-redux";
@@ -8,29 +9,39 @@ class ToolBar extends React.Component {
 
     toolBarDisplayRender() {
         if (this.props.tool === null) {
-            return <div>TOOL BAR</div>
+            return (
+                <Container fluid className={"my-3"}>
+                    <Row className={"d-flex justify-content-center"}>
+                        <h2>Start Building A Quick Bootstrap Page!</h2>
+                    </Row>
+                    <Row className={"d-flex justify-content-center"}>
+                        <p>Click On Any Component To Begin.</p>
+                    </Row>
+                </Container>
+
+            );
         }
         const buttonDisplay = this.props.tool.structure.map(button => {
             if (button.id.includes('nav')) {
-                return <button onClick={() => this.props.selectNavChange(button.id)}
+                return <button className={"mx-2 tool-button btn"} onClick={() => this.props.selectNavChange(button.id)}
                                key={button.id}>{button.text}</button>
             }
             if (button.id.includes('jumbo')){
-                return <button onClick={() => this.props.selectJumboChange(button.id)}
+                return <button className={"mx-2 tool-button btn"} onClick={() => this.props.selectJumboChange(button.id)}
                                key={button.id}>{button.text}</button>
             }
             if (button.id.includes('form')){
-                return <button onClick={()=> this.props.selectFormChange(button.id)}
+                return <button className={"mx-2 tool-button btn"} onClick={()=> this.props.selectFormChange(button.id)}
                                key={button.id}>{button.text}</button>
             }
             if (button.id.includes('list')){
-                return <button onClick={()=> this.props.selectListChange(button.id)}
+                return <button className={"mx-2 tool-button btn"} onClick={()=> this.props.selectListChange(button.id)}
                                key={button.id}>{button.text}</button>
             } return null;
         })
             return (
                 <Container fluid className={'my-3'}>
-                    <div key={this.props.tool.connect}>
+                    <div className={"d-flex justify-content-center"} key={this.props.tool.connect}>
                         {buttonDisplay}
                     </div>
                 </Container>
@@ -39,7 +50,11 @@ class ToolBar extends React.Component {
     }
     render() {
 
-        return this.toolBarDisplayRender();
+        return (
+            <div className={"tool-bar-container container-fluid"}>
+                    {this.toolBarDisplayRender()}
+            </div>
+        )
     }
 }
 

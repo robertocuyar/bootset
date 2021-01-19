@@ -9,8 +9,6 @@ body {
 }
 .nav_main {
     background-color: var(--bold-color);
-
-
 }
 .nav_text{
     font-family: 'Potta One', cursive;
@@ -22,16 +20,29 @@ body {
     height: 100vh !important;
 
 }
-.components, #components-title{
+.components, #components-title, .tool-button{
     font-family: 'Open Sans', sans-serif;
     color: var(--main-bg-color);
 }
+
 #components-title{
     border-bottom: var(--main-color) groove 2px;
 }
 
 .components{
     cursor: pointer;
+}
+
+.tool-bar-container{
+    background-color: var(--main-color);
+}
+
+.tool-button{
+    background-color: var(--bold-color);
+    box-shadow: 3px 5px 1px var(--bold-main-color);
+}
+.tool-button:hover{
+    color: var(--main-color);
 }
 #title{
     font-size: 100%;

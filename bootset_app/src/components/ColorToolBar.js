@@ -15,29 +15,29 @@ class ColorToolBar extends React.Component {
            return (
                <Container>
                    <Row>
-                       <Col>
-                   <label>Nav Bar Color Change</label>
-                   <input type="text" onChange={(e)=> this.props.inputNavColor(e.target.value)}/>
+                       <Col className={"my-2"}>
+                   <label className={"mr-2 label-text"}>Nav Bar Color Change</label>
+                   <input type="text" placeholder={this.props.navColor} onChange={(e)=> this.props.inputNavColor(e.target.value)}/>
                        </Col>
-                       <Col>
-                   <label>Jumbotron Color Change</label>
+                       <Col className={"my-2"}>
+                   <label className={"mr-2 label-text"}>Jumbotron Color Change</label>
                    <input type="text" onChange={(e)=> this.props.inputJumboColor(e.target.value)}/>
                        </Col>
 
                    </Row>
                    <Row>
-                       <Col>
-                           <label>Form Color Change</label>
+                       <Col className={"my-2"}l>
+                           <label className={"mr-2 label-text"}>Form Color Change</label>
                            <input type="text" onChange={(e)=> this.props.inputFormColor(e.target.value)}/>
                        </Col>
-                       <Col>
-                   <label>List Color Change</label>
+                       <Col className={"my-2"}>
+                   <label className={"mr-2 label-text"}>List Color Change</label>
                    <input type="text" onChange={(e) => this.props.inputListColor(e.target.value)}/>
                        </Col>
                    </Row>
                    <Row>
-                       <Col>
-                           <label>Body Color Change</label>
+                       <Col className={"my-2"}>
+                           <label className={"mr-2 label-text"}>Body Color Change</label>
                            <input type="text" onChange={(e) => this.props.inputBodyColor(e.target.value)}/>
                        </Col>
                    </Row>
@@ -47,7 +47,7 @@ class ColorToolBar extends React.Component {
    }
    render(){
        return(
-           <Container fluid className={"d-flex justify-content-center nav_main"}>
+           <Container fluid className={"d-flex justify-content-center nav_main py-2"}>
                {this.toolBarDisplayRender()}
            </Container>
        )
@@ -61,9 +61,10 @@ class ColorToolBar extends React.Component {
 const mapStateToProps = state => {
     return {
         changeNav: state.selectedNavChange,
-    changeJumbo: state.selectedJumboChange,
+        changeJumbo: state.selectedJumboChange,
         changeForm: state.selectedFormChange,
-        changeList: state.selectedListChange
+        changeList: state.selectedListChange,
+        navColor: state.selectedNavColor
 
     }
 };

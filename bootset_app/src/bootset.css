@@ -23,7 +23,7 @@ body {
 #main-body{
     height: 131vh;
 }
-.components, #components-title, .tool-button{
+.components, #components-title, .tool-button, .label-text{
     font-family: 'Open Sans', sans-serif;
     color: var(--main-bg-color);
 }

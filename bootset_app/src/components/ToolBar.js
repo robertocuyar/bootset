@@ -11,11 +11,11 @@ class ToolBar extends React.Component {
         if (this.props.tool === null) {
             return (
                 <Container fluid className={"my-3"}>
-                    <Row className={"d-flex justify-content-center"}>
-                        <h2>Start Building A Quick Bootstrap Page!</h2>
+                    <Row className={"d-flex justify-content-center my-2 intro-text"}>
+                        <h1>Start Building A Quick Bootstrap Page!</h1>
                     </Row>
-                    <Row className={"d-flex justify-content-center"}>
-                        <p>Click On Any Component To Begin.</p>
+                    <Row className={"d-flex justify-content-center my-2 intro-text"}>
+                        <h5>Click On Any Component To Begin.</h5>
                     </Row>
                 </Container>
 

@@ -48,6 +48,14 @@ body {
     font-size: 100%;
 }
 
+.intro-text{
+    font-size: x-large;
+    font-family: 'Potta One', cursive;
+    color: var(--main-bg-color);
+    text-shadow: 0 0 10px var(--bold-main-color);
+
+}
+
 main {
     width: 70% !important;
 }

@@ -12,7 +12,7 @@ const MainContent = () => {
             <Row>
         <ToolBar />
             </Row>
-            <Row>
+            <Row className={"d-flex justify-content-center"}>
                 <ColorToolBar />
             </Row>
             <Row>

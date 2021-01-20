@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import {inputNavColor, inputJumboColor, inputFormColor, inputListColor, inputBodyColor} from "../actions";
+import InitialPage from "../references/InitialPage";
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -9,7 +10,7 @@ import Row from 'react-bootstrap/Row';
 class ColorToolBar extends React.Component {
    toolBarDisplayRender () {
        if (this.props.changeNav === null && this.props.changeJumbo === null && this.props.changeForm === null && this.props.changeList === null) {
-           return <div>COLOR TOOL BAR</div>
+           return <InitialPage/>
        }
            return (
                <Container>
@@ -45,7 +46,11 @@ class ColorToolBar extends React.Component {
 
    }
    render(){
-       return this.toolBarDisplayRender();
+       return(
+           <Container fluid className={"d-flex justify-content-center nav_main"}>
+               {this.toolBarDisplayRender()}
+           </Container>
+       )
    }
 }
 

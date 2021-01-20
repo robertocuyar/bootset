@@ -8,11 +8,11 @@ import MainContent from "./MainContent";
 const MainBody = ()=>{
 return (
     <Container fluid>
-        <Row>
+        <Row id={"main-body"}>
             <Col className={"nav_side"} xs={2}>
                 <SideBar />
             </Col>
-            <Col className={"px-0"}>
+            <Col className={"px-0 h-100"}>
                 <MainContent />
             </Col>
         </Row>

@@ -17,8 +17,11 @@ body {
 }
 .nav_side {
     background-color: var(--bold-main-color);
-    height: 100vh !important;
+    height: 100% !important;
+}
 
+#main-body{
+    height: 131vh;
 }
 .components, #components-title, .tool-button{
     font-family: 'Open Sans', sans-serif;
@@ -54,6 +57,10 @@ body {
     color: var(--main-bg-color);
     text-shadow: 0 0 10px var(--bold-main-color);
 
+}
+#sample-page{
+    width: 70%;
+    background-color: var(--main-bg-color);
 }
 
 main {

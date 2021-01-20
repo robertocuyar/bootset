@@ -51,9 +51,9 @@ class ToolBar extends React.Component {
     render() {
 
         return (
-            <div className={"tool-bar-container container-fluid"}>
+            <Container fluid className={"tool-bar-container"}>
                     {this.toolBarDisplayRender()}
-            </div>
+            </Container>
         )
     }
 }

@@ -7,8 +7,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { connect } from 'react-redux';
+import InitialPage from "../references/InitialPage";
 
-const DisplayPage =  ({color}) => {
+const DisplayPage =  ({color, changeNav, changeJumbo, changeForm, changeList}) => {
+
+    if (changeNav === null && changeJumbo === null && changeForm === null && changeList === null) {
+        return null;
+    }
     return (
         <Container className={'px-0'} style={{backgroundColor: color}}>
             <Row>
@@ -37,7 +42,11 @@ const DisplayPage =  ({color}) => {
 }
 const mapStateToProps = state => {
     return {
-        color: state.selectedBodyColor
+        color: state.selectedBodyColor,
+        changeNav: state.selectedNavChange,
+        changeJumbo: state.selectedJumboChange,
+        changeForm: state.selectedFormChange,
+        changeList: state.selectedListChange
     }
 }
 

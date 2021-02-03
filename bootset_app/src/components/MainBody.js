@@ -7,12 +7,12 @@ import MainContent from "./MainContent";
 
 const MainBody = ()=>{
 return (
-    <Container fluid>
-        <Row id={"main-body"}>
+    <Container fluid id={"body-container"}>
+        <Row className={"h-100"}>
             <Col className={"nav_side"} xs={2}>
                 <SideBar />
             </Col>
-            <Col className={"px-0 h-100"}>
+            <Col className={"px-0 h-100"} xs={10}>
                 <MainContent />
             </Col>
         </Row>

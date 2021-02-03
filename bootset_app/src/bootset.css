@@ -6,6 +6,10 @@
 }
 body {
     background-color: var(--main-bg-color) !important;
+    height: 100vh;
+}
+#root, #body-container{
+    height: 100%;
 }
 .nav_main {
     background-color: var(--bold-color);
@@ -17,11 +21,15 @@ body {
 }
 .nav_side {
     background-color: var(--bold-main-color);
-    height: 100% !important;
+    /*height: 100% !important;*/
 }
 
 #main-body{
-    height: 131vh;
+    /*height: 100vh;*/
+}
+
+#body-container{
+    /*height: 100vh;*/
 }
 .components, #components-title, .tool-button, .label-text{
     font-family: 'Open Sans', sans-serif;

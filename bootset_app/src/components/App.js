@@ -4,7 +4,7 @@ import MainBody from "./MainBody";
 
 const App =  () =>{
     return (
-        <div>
+        <div className={"h-100"}>
         <NavBarIntro />
         <MainBody />
         </div>

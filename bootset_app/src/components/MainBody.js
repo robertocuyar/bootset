@@ -12,7 +12,7 @@ return (
             <Col className={"nav_side"} xs={2}>
                 <SideBar />
             </Col>
-            <Col className={"px-0 h-100"} xs={10}>
+            <Col className={"px-0"} xs={10}>
                 <MainContent />
             </Col>
         </Row>

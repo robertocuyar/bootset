@@ -10,7 +10,7 @@ const MainContent = () => {
     return (
         <Container fluid>
             <Row>
-        <ToolBar />
+                <ToolBar />
             </Row>
             <Row className={"d-flex justify-content-center"}>
                 <ColorToolBar />

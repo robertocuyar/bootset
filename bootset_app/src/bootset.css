@@ -4,9 +4,12 @@
     --main-color: #79bac1;
     --bold-main-color: #2a7886;
 }
+html, body {
+    height: 100% !important;
+}
 body {
     background-color: var(--main-bg-color) !important;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 #root, #body-container{
     height: 100%;

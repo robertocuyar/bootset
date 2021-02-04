@@ -7,7 +7,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { connect } from 'react-redux';
-import InitialPage from "../references/InitialPage";
 
 const DisplayPage =  ({color, changeNav, changeJumbo, changeForm, changeList}) => {
 

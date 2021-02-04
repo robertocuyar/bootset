@@ -8,7 +8,7 @@ import MainContent from "./MainContent";
 const MainBody = ()=>{
 return (
     <Container fluid id={"body-container"}>
-        <Row className={"h-100"}>
+        <Row id={"body-content"}>
             <Col className={"nav_side"} xs={2}>
                 <SideBar />
             </Col>

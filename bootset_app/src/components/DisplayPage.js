@@ -15,7 +15,7 @@ const DisplayPage =  ({color, changeNav, changeJumbo, changeForm, changeList}) =
         return null;
     }
     return (
-        <Container className={'px-0 my-3'} style={{backgroundColor: color}}>
+        <Container className={'px-0 my-4'} style={{backgroundColor: color}}>
             <Row>
                 <Col>
             <DisplayNavBar />

@@ -8,7 +8,7 @@ import ColorToolBar from "./ColorToolBar";
 
 const MainContent = () => {
     return (
-        <Container fluid>
+        <Container fluid className={""}>
             <Row>
                 <ToolBar />
             </Row>
@@ -16,7 +16,7 @@ const MainContent = () => {
                 <ColorToolBar />
             </Row>
             <Row>
-                <DisplayPage/>
+                <DisplayPage className={""}/>
             </Row>
         </Container>
     )
